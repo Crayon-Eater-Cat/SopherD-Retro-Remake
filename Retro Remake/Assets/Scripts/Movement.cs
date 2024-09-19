@@ -18,11 +18,9 @@ public class Movement : MonoBehaviour
     public float jumpForce;
 
     private Rigidbody2D moveit;
-    //SpriteRenderer SprRNDr;
     void Start()
     {
         moveit = GetComponent<Rigidbody2D>();
-        //SprRNDr = GetComponent<SpriteRenderer>();
     }
     void Update()
     {
@@ -48,10 +46,6 @@ public class Movement : MonoBehaviour
         {
             grounded = true;
         }
-        //else
-        //{
-        //    grounded = false;
-        //}
     }
 
     private void OnCollisionExit2D(Collision2D other)
