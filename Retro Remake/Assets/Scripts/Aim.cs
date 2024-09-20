@@ -8,4 +8,8 @@ public class Aim : MonoBehaviour
     {
         PewRotate();
     }
+    private void PewRotate()
+    {
+
+    }
 }
