@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2574546080543549410}
   - component: {fileID: 4642910061879678112}
   - component: {fileID: -3633169174851339299}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BreakTrump
   m_TagString: Berk
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 236980681075758459}
   - component: {fileID: 371719518162140791}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Marker
   m_TagString: Untagged
   m_Icon: {fileID: 0}

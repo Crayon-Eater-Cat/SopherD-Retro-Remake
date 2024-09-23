@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pew : MonoBehaviour
 {
+    public GameObject Bullet;
     private float Rdy;
 
     private float cD = 1;
@@ -26,6 +27,7 @@ public class Pew : MonoBehaviour
             if (Rdy <= 0)//Allowed to shoot
             {
                 Rdy = cD;//Start CD
+                Instantiate(Bullet, transform.position, Quaternion.identity);
                 Debug.Log("Pew Pew");
             }
             else//Not allowed to shoot 

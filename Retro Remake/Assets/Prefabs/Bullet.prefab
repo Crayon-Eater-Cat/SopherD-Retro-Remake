@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3337224386358159277}
   - component: {fileID: 2597333308980873571}
   - component: {fileID: 3672859489133284483}
+  - component: {fileID: 1711037348600322292}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -138,9 +139,26 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 0
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
+--- !u!114 &1711037348600322292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592235478653161083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393e07e08b2354f4fa0a2d2be6a46aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BreakTrump: {fileID: 3530607928919833397, guid: d6550735d7a6d244b89d7781ef7a246d, type: 3}
+  destroyTime: 3
+  bulBrek:
+    serializedVersion: 2
+    m_Bits: 128
