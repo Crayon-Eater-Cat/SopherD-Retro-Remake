@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.U2D;
 using UnityEngine;
 
 public class BulletBehav : MonoBehaviour
@@ -8,8 +9,9 @@ public class BulletBehav : MonoBehaviour
     public float destroyTime = 3f;
 
     [SerializeField] private LayerMask bulBrek;
-    private float normalBulletSpeed = 15f;
+    public float normalBulletSpeed = 15f;
     private Rigidbody2D rb;
+    private Vector2 direction;
 
     private void Start()
     {
@@ -26,16 +28,12 @@ public class BulletBehav : MonoBehaviour
     {
         Destroy(gameObject, destroyTime);
     }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if ((bulBrek.value & (1 << collision.gameObject.layer)) > 0)
         {
             Destroy(gameObject);
         }
-        //if (other.gameObject.CompareTag("Berk"))
-        //{
-        //    Debug.Log("Breakies");
-        //    Destroy(gameObject, BreakTrump);dddd
-        //}
     }
 }

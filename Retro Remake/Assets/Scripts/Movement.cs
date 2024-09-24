@@ -55,12 +55,4 @@ public class Movement : MonoBehaviour
             grounded = false;
         }
     }
-
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.gameObject.CompareTag("CheckPoint"))
-    //    {
-    //        CheckyPointy = other.transform.position;
-    //    }
-    //}
 }

@@ -6,16 +6,9 @@ public class Pew : MonoBehaviour
 {
     public GameObject Bullet;
     private float Rdy;
-
     private float cD = 1;
-
     public KeyCode pew;
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
 
-    // Update is called once per frame
     void Update()
     {
         if (Rdy > 0)//wait time
@@ -43,6 +36,5 @@ public class Pew : MonoBehaviour
         {
             Rdy = 0;
         }
-
     }
 }
