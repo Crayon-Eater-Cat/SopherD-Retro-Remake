@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 2597333308980873571}
   - component: {fileID: 3672859489133284483}
   - component: {fileID: 1711037348600322292}
+  - component: {fileID: -8295424560580895340}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: PewProject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,8 +140,8 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 2
-  m_GravityScale: 3
-  m_Material: {fileID: 0}
+  m_GravityScale: 5
+  m_Material: {fileID: 6200000, guid: 824a59b860165db4fb9cc1c995b84f7b, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -162,4 +163,18 @@ MonoBehaviour:
   bulBrek:
     serializedVersion: 2
     m_Bits: 128
-  normalBulletSpeed: 15
+  normalBulletSpeed: 20
+--- !u!114 &-8295424560580895340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592235478653161083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 838d05715afabbe4686f5719b7a5ffe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 5539704179595922849, guid: 284eec03a3ebf6341ae566b37c2b69f8, type: 3}
+  esplodeTime: 0.5

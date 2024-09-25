@@ -33,6 +33,7 @@ public class BulletBehav : MonoBehaviour
     {
         if ((bulBrek.value & (1 << collision.gameObject.layer)) > 0)
         {
+            Destroy(collision.gameObject);
             Destroy(gameObject);
         }
     }
