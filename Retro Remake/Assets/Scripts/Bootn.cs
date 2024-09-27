@@ -15,4 +15,8 @@ public class Bootn : MonoBehaviour
             OnHit.Invoke();
         }
     }
+    public void LoadLevel(string SceneName)
+    {
+        SceneManager.LoadScene(SceneName);
+    }
 }
